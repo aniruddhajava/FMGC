@@ -1,6 +1,1 @@
-# FMGC
 
-
-hiii
-
-`python gggg`
