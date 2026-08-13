@@ -1,16 +1,16 @@
-# 📊 FMCG Sales Analysis using Python
+#  FMCG Sales Analysis using Python
 
-## 📌 Project Overview
+##  Project Overview
 
 This project analyzes **FMCG (Fast-Moving Consumer Goods) sales data** using Python and Pandas.
 
 The objective is to clean and transform raw sales data, perform exploratory sales analysis, identify important business trends, and generate an Excel report containing the key analysis results.
 
-The project demonstrates practical **Data Analyst skills including data cleaning, data transformation, aggregation, business analysis, and automated report generation**.
+The project demonstrates practical **Data Analyst skills including data cleaning, data transformation, aggregation and automated report generation**.
 
 ---
 
-## 🛠️ Technologies & Tools
+##  Technologies & Tools
 
 * **Python**
 * **Pandas** – Data cleaning and analysis
@@ -21,7 +21,7 @@ The project demonstrates practical **Data Analyst skills including data cleaning
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The dataset contains FMCG sales information with the following columns:
 
@@ -35,9 +35,8 @@ The dataset contains FMCG sales information with the following columns:
 | `Qty`          | Quantity sold                          |
 | `Sales`        | Sales amount                           |
 
-## The dataset analyzed in the notebook contains **224 records and 7 columns** after loading the raw sales data.
 
-## 🔧 Data Cleaning & Preprocessing
+##  Data Cleaning & Preprocessing
 
 The raw dataset required several preprocessing steps before analysis.
 
@@ -76,7 +75,7 @@ The resulting dataset contained **224 non-null records** across all seven column
 
 ---
 
-## 📈 Analysis Performed
+##  Analysis Performed
 
 ### 1. Month-wise Quantity Sold
 
@@ -179,7 +178,7 @@ df["Product"] = df["Product Name"].str.replace(
 
 The highest-selling product based on sales was:
 
-### 🏆 ALOE + GARCINIA JUICE
+###  ALOE + GARCINIA JUICE
 
 **Total Sales: ₹12,249,252**
 
@@ -200,7 +199,7 @@ This helped identify unique products independently of their packaging quantities
 
 ---
 
-## 📊 Excel Report
+##  Excel Report
 
 The analysis results were exported to an Excel workbook using Pandas `ExcelWriter`.
 
@@ -215,7 +214,7 @@ with pd.ExcelWriter("Sales_Report.xlsx") as writer:
     unique_product.to_excel(writer, sheet_name="All Product")
 ```
 
-### 📁 Report Sheets
+###  Report Sheets
 
 The generated `Sales_Report.xlsx` contains:
 
@@ -227,18 +226,6 @@ The generated `Sales_Report.xlsx` contains:
 6. **All Product**
 
 The notebook explicitly creates these six analysis sheets.
-
----
-
-## 📌 Key Business Insights
-
-Based on the analysis:
-
-* 📦 **Juices** had the highest quantity sold.
-* 🛒 **AMAZON** generated the highest sales among the sub-channels.
-* 📅 **March 2021** had the highest monthly sales.
-* 🏆 **ALOE + GARCINIA JUICE** was the highest-selling product based on sales.
-* 📊 The project uses aggregation to compare sales performance across months, categories, products, and sales channels.
 
 ---
 
@@ -286,41 +273,6 @@ Open:
 ```text
 FMGC(1).ipynb
 ```
-
----
-
-## 🎯 Skills Demonstrated
-
-This project demonstrates the following Data Analyst skills:
-
-* Data Cleaning
-* Data Preprocessing
-* Data Type Conversion
-* Pandas DataFrames
-* Pandas `groupby()`
-* Aggregation
-* Sorting and Filtering
-* String Manipulation
-* Regular Expressions
-* Sales Analysis
-* Product Analysis
-* Business Insights
-* Excel Report Generation
-* Jupyter Notebook
-
----
-
-## 👨‍💻 Author
-
-**Aniruddh Pathak**
-
-B.Tech – Computer Science
-Data Analytics Professional
-
-### Skills
-
-`Python` `Pandas` `NumPy` `SQL` `Excel` `Power BI` `Data Analysis`
-
 ---
 
 ⭐ If you found this project useful, consider giving the repository a **star**!
